@@ -14,44 +14,42 @@
 
 <body>
 <div class="container">
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-dark bg-primary">
       <a class="navbar-brand" href="#">Jogo de Dados</a>
-      <a class="nav-link" href="#">Cadastrar</a>
+      <a class="nav-link bg-light" href="#">Cadastrar</a>
     </nav>
 
   <div class="row">
       <div class="col col-lg-6">
         <div class="text-center">
-          <h3 class="text-left">Total : </h3>
-          <img src="imagens/dados.gif" onmouseover="Grande(this)" id="img1" width="200px" height="200px"/>
-          <!--<p class="text-center"><strong> Jogador 1</strong></p>-->
+          <h6 class="text-left">Total : </h6>
+          <img src="imagens/dados.gif" onmouseover="Grande(this)" id="img1" width="100px" height="100px"/>
         </div>
       </div>
 
       <div class="col col-lg-6">
         <div class="text-center">
-          <h3 class="text-left">Total : </h3>
-          <img src="imagens/dados.gif" onmouseover="Grande(this)" id="img2" width="200px" height="200px"/>
-          <!--<p id="trocarNome" class="text-center"><strong>Jogador 2</strong></p>-->
+          <h6 class="text-left">Total : </h6>
+          <img src="imagens/dados.gif" onmouseover="Grande(this)" id="img2" width="100px" height="100px"/>
         </div>
       </div>
   </div>
 
   <div class="row">
     <div class="col text-center">
-      <input type="button" class="btn btn-primary" name="reiniciar" value="Reiniciar Jogo" onclick="reiniciar">
+      <input type="button" class="btn btn-dark" name="reiniciar" value="Reiniciar Jogo" onclick="reiniciar">
     </div>
   </div>
 
   <div class="row">
     <div class="col col-lg-6 text-center">
       <p class="text-center"><strong>Jogador 1</strong></p>
-      <input class="btn btn-primary" type="button" name="dado1" value="Sorteiar Dados" onclick="sorteia1()">
+      <input class="btn btn-dark" type="button" name="dado1" value="Sorteiar Dados" onclick="sorteia1()">
     </div>
 
     <div class="col col-lg-6 text-center">
       <p class="text-center"><strong>Jogador 2</strong></p>
-      <input class="btn btn-primary" type="button" name="dado2" value="Sorteiar Dados" onclick="sorteiar2()">
+      <input class="btn btn-dark" type="button" name="dado2" value="Sorteiar Dados" onclick="sorteiar2()">
     </div>
 
   </div>
