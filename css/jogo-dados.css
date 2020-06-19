@@ -1,0 +1,27 @@
+fieldset{
+	margin: 100px auto;
+	width: 500px;
+
+	text-align: center;
+	border: solid 1px;
+
+}
+
+#btnEnviar{
+	margin-top: 5px;
+
+}
+
+fieldset legend{
+	margin: 0 auto;
+	font-size: 30px;
+}
+label{
+	display: inline-block;
+	width: 100px;
+}
+
+input{
+	padding: 5px auto;
+	margin-top: 5px;
+}
