@@ -2,6 +2,8 @@ var flag_jogando_jog2;
 var flag_jogando_jog1;
 var dado1;
 var dado2;
+var jog1;
+var jog2;
 
 function getRandomInt (min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;

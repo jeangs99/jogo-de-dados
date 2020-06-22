@@ -22,46 +22,45 @@
 	<!-- <form id="formularioId"> -->
 
 		<fieldset>
+				<legend>Insira seus dados abaixo</legend>
 
-			<legend>Insira seus dados abaixo</legend>
-
-			<div class="input-group flex-nowrap">
-				<div class="input-group-prepend">
-					<span class="input-group-text">Nome</span>
+				<div class="input-group flex-nowrap">
+					<div class="input-group-prepend">
+						<span class="input-group-text">Nome</span>
+					</div>
+					<input class="form-control" placeholder="Seu nome" type="text" name="tNome" id="cNome" required>
 				</div>
-				<input class="form-control" placeholder="Seu nome" type="text" name="tNome" id="cNome" required>
-			</div>
 
-			<div class="input-group flex-nowrap">
-				<div class="input-group-prepend">
-					<span class="input-group-text">Nick</span>
+				<div class="input-group flex-nowrap">
+					<div class="input-group-prepend">
+						<span class="input-group-text">Nick</span>
+					</div>
+					<input class="form-control" placeholder="Seu nick" type="text" name="tNick" id="cNick" required>
 				</div>
-				<input class="form-control" placeholder="Seu nick" type="text" name="tNick" id="cNick" required>
-			</div>
 
-			<div class="input-group flex-nowrap">
-				<div class="input-group-prepend">
-					<span class="input-group-text">Idade</span>
+				<div class="input-group flex-nowrap">
+					<div class="input-group-prepend">
+						<span class="input-group-text">Idade</span>
+					</div>
+					<input class="form-control" placeholder="Sua idade" type="number" name="tIdade" id="cIdade" required><br>
 				</div>
-				<input class="form-control" placeholder="Sua idade" type="number" name="tIdade" id="cIdade" required><br>
-			</div>
 
-			<div id="esb" class="row">
-				<div class="col text-center">
-					<button class="btn btn-dark" id="btnEnviar" onclick="cadastraJogador()">Cadastrar</button>
-					<p id="funciona"></p>
-			</div>
-			</div>
+				<div id="esb" class="row">
+					<div class="col text-center">
+						<button class="btn btn-dark" id="btnEnviar" onclick="cadastraJogador()">Cadastrar</button>
+						<p id="funciona"></p>
+				</div>
+				</div>
 
-			<script>
-				function cadastraJogador(){
-					var nome = String(document.getElementById('cNome').value);
-					var nick = String(document.getElementById('cNick').value);
-					var idade = Number(document.getElementById('cIdade').value);
-					/*Abaixo um código para testar se o conteúdo digitado pelo usuário foi gravado nas variáveis.*/
-					document.getElementById('funciona').innerHTML = `Seu nome é <strong>${nome}</strong>, e seu nick é <strong>${nick}</strong>  e sua idade é <strong>${idade}</strong>`;
-				}
-			</script>
+				<script>
+					function cadastraJogador(){
+						var nome = String(document.getElementById('cNome').value);
+						var nick = String(document.getElementById('cNick').value);
+						var idade = Number(document.getElementById('cIdade').value);
+						/*Abaixo um código para testar se o conteúdo digitado pelo usuário foi gravado nas variáveis.*/
+						document.getElementById('funciona').innerHTML = `Seu nome é <strong>${nome}</strong>, e seu nick é <strong>${nick}</strong>  e sua idade é <strong>${idade}</strong>`;
+					}
+				</script>
 		</fieldset>
 
 
