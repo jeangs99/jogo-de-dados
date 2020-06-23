@@ -11,18 +11,28 @@
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="css/style.css">
 <script src="js/jogo-dados.js"></script>
-<script type="text/javascript">
-  var obj = localStorage.getItem(cNick.value);
-  if(obj != null)
-    /*alert(obj)*/
-    document.getElementById('jogador1').value = obj;
-  else
-    alert("O item procurado não existe.")  
-</script>
-  
 </head>
 
 <body>
+  <label for="cNick">Informe seu Nick:</label>
+  <input type="text" name="tNick" id="cNick" required/ >
+  <button id="btnLer" onclick="ler()">Pesquisar</button>
+  <script type="text/javascript">
+    function ler(){
+    /*var obj = localStorage.getItem(cNick.value);*/
+    var obj = localStorage.getItem(cNick.value);
+    if(obj != null)
+    /*alert(obj)*/
+      document.getElementById('jogador1').innerHTML = `<strong>${obj}`;
+    else
+      alert("O item procurado não existe.") 
+  /*
+    document.getElementById('cNick').innerHTML = 'dasd' + nome; 
+    */
+    }
+    
+  </script>
+  
 <div class="container">
     <nav class="navbar navbar-dark bg-primary">
       <a class="navbar-brand" href="#">Jogo de Dados</a>
@@ -49,7 +59,7 @@
 
   <div class="row">
     <div class="col col-lg-6 text-center">
-      <p class="text-center" id="cNick"><strong>Jogador 1</strong></p>
+      <p class="text-center" id="jogador1"><strong>Jogador 1</strong></p>
       <input class="btn btn-dark" type="button" value="Sorteiar Dados" onclick = "sorteia1()">
     </div>
 
@@ -63,6 +73,7 @@
     <div class="col text-center">
       <input type="button" class="btn btn-dark btn-sm" name="reiniciar" value="Reiniciar Jogo" onclick="reiniciar">
     </div>
+    
   </div>
 
 </div> <!--container-->
